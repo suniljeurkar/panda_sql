@@ -11,10 +11,10 @@ It dynamically:
 ---
 
 ## 🚀 Features
-- **Automated Table Creation**: Dynamically detects column names and data types.
-- **Handles Missing Data**: Converts `NaN` values from CSV to `NULL` in MySQL.
-- **Optimized Bulk Insert**: Uses batch processing for faster performance.
-- **Minimal Configuration**: No need to write SQL queries manually.
+- Automated Table Creation: Dynamically detects column names and data types.
+- Handles Missing Data: Converts `NaN` values from CSV to `NULL` in MySQL.
+- Optimized Bulk Insert: Uses batch processing for faster performance.
+- Minimal Configuration: No need to write SQL queries manually.
 
 ---
 
@@ -26,13 +26,13 @@ Ensure Python and MySQL are installed, then install the required libraries:
 pip install mysql-connector-python pandas
 ```
 
-### 2️⃣ **Setup MySQL Database**
+### 2️⃣ Setup MySQL Database
 Create a database in MySQL:
 ```sql
 CREATE DATABASE northwind_mysql;
 ```
 
-### 3️⃣ **Configure MySQL Connection**
+### 3️⃣ Configure MySQL Connection
 Modify the `conn` settings in the script if needed:
 ```python
 conn = mysql.connector.connect(
@@ -43,7 +43,7 @@ conn = mysql.connector.connect(
 )
 ```
 
-### 4️⃣ **Run the Script**
+### 4️⃣ Run the Script
 To execute the script:
 ```sh
 python insert_SQL_data.py
@@ -84,14 +84,14 @@ SELECT * FROM Customers LIMIT 5;
 ---
 
 ## 📌 Future Improvements
-- ✅ **Batch insert for performance optimization**
-- ✅ **Support for multiple CSV imports**
-- ✅ **Flask API for remote CSV upload & database insertion**
+- ✅ Batch insert for performance optimization
+- ✅ Support for multiple CSV imports
+- ✅ Flask API for remote CSV upload & database insertion
 
 ---
 
 ## 📜 License
-This project is **open-source** and free to use.
+This project is open-source and free to use.
 
 ---
 
